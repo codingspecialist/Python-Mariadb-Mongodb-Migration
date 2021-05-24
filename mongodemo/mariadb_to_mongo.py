@@ -43,7 +43,7 @@ def mongo_save(mongo, datas, db_name=None, collection_name=None):
 # Mongo 연결
 mongo = MongoClient("localhost", 27017)
 # print(mongo)  # connect=True
-collection = mongo_find(mongo, None, "test", "users")
+collection = mongo_find(mongo, {"id":2}, "test", "users")
 
 # MySQL 연결
 mysql = connect(host="localhost", user="root",
